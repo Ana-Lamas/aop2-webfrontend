@@ -1,10 +1,10 @@
 # Animes em Foco
 
-![Status do Projeto](https://img.shields.io/badge/Status-Em%20Progresso-yellow)
+![Status do Projeto](https://img.shields.io/badge/Status-Concluído-brightgreen)
 
 Blog estático de reviews e análises de animes, desenvolvido como projeto acadêmico para a disciplina de Programação Web - Front End da Universidade de Vila Velha, como uma atividade proposta na Atividade Online Pontuada 2.
 
-O objetivo do projeto foi construir um site com múltiplas páginas utilizando **HTML5 semântico** e **CSS3 puro**, focando nos fundamentos do desenvolvimento web cumprindo com os requisitos obrigatórios de ao menos 5 páginas de navegação. O tema escolhido para o site foi opinião sobre Animes.
+O objetivo do projeto foi construir um site com múltiplas páginas utilizando **HTML5** **CSS3** e **Javascript**, focando nos fundamentos do desenvolvimento web cumprindo com os requisitos obrigatórios de ao menos 5 páginas de navegação. O tema escolhido para o site foi opinião sobre Animes.
 
 ---
 
@@ -34,7 +34,7 @@ Todo o estilo do site é controlado por um único arquivo, **`stylev1.css`**.
     * **Estilização de Formulários:** Criação de um formulário de contato consistente com o tema do site.
     * **Tipografia:** Importação de fontes customizadas (Google Fonts) para garantir a identidade visual.
     * **Arquivo Único:** Demonstração de como organizar um CSS coeso que se aplica a múltiplas páginas HTML.
-
+* **Javascript:** Pequeno script para a página de contatos.
 ---
 
 ## Autores
