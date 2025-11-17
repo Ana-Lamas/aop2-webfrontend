@@ -1,3 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap');
+
+/* aplicar a fonte escolhida para a página */
+body {
+  /* escolher da fonte padrão para todas as páginas */
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400; 
+  color: #333;
+}
+
+h1, h2, h3, h4 {
+  /* padronizar os títulos com a fonte Montserrat */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #111;
+}
+
+body {
+  background-color: #181818;
+  color: #CCCCCC;
+  font-family: 'Source Sans Pro',
+}
+
+h1, h2, h3 {
+  color: #FFFFFF;
+  font-family: 'Source Sans Pro', sans-serif; 
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* padronizar a cor das páginas de navegação */
+a {
+  color: #B8860B;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #FFFFFF;
+}
+
 .imagem-do-card {
   width: 1200px;  /* defina a largura da imagem */
   height: 450px; /* define a altura da imagem */
@@ -18,26 +59,58 @@
   margin-right: auto;
 }
 
-/* alinha os textos da lista */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+
+body {
+  background-color: #181818;
+  color: #CCCCCC;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* cabeçalho */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  
+  border-bottom: 2px solid #B8860B; 
+  
+  margin-bottom: 30px; 
+}
+
+/* título das páginas */
+header h1 {
+  font-family: 'Source Sans Pro', sans-serif; 
+  font-weight: 700;
+  color: #FFFFFF;
+  letter-spacing: 1px;
+  
+  font-size: 2.2rem;
+  margin: 0;
+}
+
+/* menu de navegação */
 nav ul {
   display: flex;
   list-style: none;
-  padding: 0; /* Remove o preenchimento padrão da lista */
-  gap: 20px; /* Adiciona um espaço DE 20px ENTRE cada item */
+  padding: 0;
+  margin: 0;
+  gap: 20px;
 }
 
-/* estiliza os links dentro da lista */
 nav ul li a {
-  text-decoration: none; /* Remove o sublinhado */
-  color: #333; /* Cor do texto (ou #fff se o fundo for escuro) */
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: bold;
-  padding: 8px 15px; /* Espaço interno para o link parecer um "botão" */
-  border-radius: 5px; /* Cantos arredondados */
-  transition: background-color 0.2s; /* Animação suave */
+  text-decoration: none;
+  color: #B8860B;
+  
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: color 0.2s;
 }
 
-/* efeito ao passar o mouse */
 nav ul li a:hover {
-  background-color: #f0f0f0; /* Um fundo cinza claro ao passar o mouse */
-  color: #000;
+  color: #FFFFFF;
+  text-decoration: none;
 }
