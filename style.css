@@ -1,0 +1,43 @@
+.imagem-do-card {
+  width: 1200px;  /* defina a largura da imagem */
+  height: 450px; /* define a altura da imagem */
+  object-fit: contain; /* garante que não haja distorção da imagem */
+}
+
+.container-principal {
+  /* define a largura do site */
+  max-width: 1200px;
+  
+  /* garantir que ocupe menos espaço em telas pequenas */
+  width: 90%;
+  
+  /* centraliza a página */
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* alinha os textos da lista */
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0; /* Remove o preenchimento padrão da lista */
+  gap: 20px; /* Adiciona um espaço DE 20px ENTRE cada item */
+}
+
+/* estiliza os links dentro da lista */
+nav ul li a {
+  text-decoration: none; /* Remove o sublinhado */
+  color: #333; /* Cor do texto (ou #fff se o fundo for escuro) */
+  font-weight: bold;
+  padding: 8px 15px; /* Espaço interno para o link parecer um "botão" */
+  border-radius: 5px; /* Cantos arredondados */
+  transition: background-color 0.2s; /* Animação suave */
+}
+
+/* efeito ao passar o mouse */
+nav ul li a:hover {
+  background-color: #f0f0f0; /* Um fundo cinza claro ao passar o mouse */
+  color: #000;
+}
