@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
 
-/* --- 1. TEMA GLOBAL DO SITE --- */
+/* tema global do site */
 body {
   background-color: #181818;
   color: #CCCCCC; 
@@ -31,14 +31,14 @@ hr {
   margin: 30px 0;
 }
 
-/* --- 2. LAYOUT PRINCIPAL --- */
+/* layout principal */
 .container-principal {
   max-width: 1200px;
   width: 90%;
   margin: 0 auto;
 }
 
-/* --- 3. CABEÇALHO E NAVEGAÇÃO --- */
+/* cabeçalho e navegação */
 header {
   display: flex;
   justify-content: space-between;
@@ -73,7 +73,7 @@ nav ul li a:hover {
   text-decoration: none;
 }
 
-/* --- 4. CARDS DE REVIEW (PÁGINA HOME) --- */
+/* cards da página home */
 .lista-reviews {
   display: flex;
   flex-wrap: wrap;
@@ -149,9 +149,7 @@ nav ul li a:hover {
   color: #FFFFFF;
 }
 
-/* --- 5. ESTILO DAS PÁGINAS DE ARTIGO --- */
-/* [CORRIGIDO] Removido o seletor de filho direto '>' 
-   Agora 'main article h1' (com espaço) funciona. */
+/* estilo das páginas de artigo */
 
 main article h1 {
   font-size: 2.8rem;
@@ -178,19 +176,18 @@ main article p > strong { /* '>' aqui está ok */
   color: #B8860B;
 }
 
-/* [CORRIGIDO] Esta é a ÚNICA regra para imagens dentro de artigos */
 main article .imagem-do-card {
   display: block;
   width: 100%;
-  max-width: 100%; /* Garante que não vaze */
+  max-width: 100%;
   height: auto;
   margin: 20px 0;
   border-radius: 8px;
   object-fit: unset;
 }
 
-/* --- 6. CITAÇÕES (BLOCKQUOTE) --- */
-/* [ADICIONADO] Estilo que estava faltando */
+/* citações */
+
 .citacao-destaque {
   background-color: #222;
   border-left: 4px solid #B8860B;
@@ -212,8 +209,8 @@ main article .imagem-do-card {
   display: block;
 }
 
-/* --- 7. LEGENDAS DE IMAGEM (FIGURE) --- */
-/* [ADICIONADO] Estilo que estava faltando */
+/* legendas das imagens dos artigos */
+
 main article figure {
   margin: 0;
   padding: 0;
@@ -227,7 +224,7 @@ main article figure figcaption {
   padding: 10px 0;
 }
 
-/* --- 8. PÁGINA DE CONTATO --- */
+/* pagina contato */
 .form-group {
   margin-bottom: 20px;
 }
@@ -274,7 +271,7 @@ main article figure figcaption {
   color: #181818;
 }
 
-/* --- 9. RODAPÉ --- */
+/* rodapé */
 footer {
   text-align: center;
   padding: 30px 0;
