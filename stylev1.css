@@ -296,3 +296,10 @@ footer {
   
   display: none; 
 }
+
+#destaques article img {
+  transition: transform 0.3s ease-in-out;
+}
+ #destaques article:hover img {
+transform: scale(1.05);
+}
