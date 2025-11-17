@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
 
-/* tema global do site */
+/* --- 1. TEMA GLOBAL DO SITE --- */
 body {
   background-color: #181818;
   color: #CCCCCC; 
@@ -31,14 +31,14 @@ hr {
   margin: 30px 0;
 }
 
-/* layout principal */
+/* --- 2. LAYOUT PRINCIPAL --- */
 .container-principal {
   max-width: 1200px;
   width: 90%;
   margin: 0 auto;
 }
 
-/* cabeçalho e botões de navegação */
+/* --- 3. CABEÇALHO E NAVEGAÇÃO --- */
 header {
   display: flex;
   justify-content: space-between;
@@ -73,9 +73,7 @@ nav ul li a:hover {
   text-decoration: none;
 }
 
-/* configs dos cards */
-
-/* cards um ao lado do outro */
+/* --- 4. CARDS DE REVIEW (PÁGINA HOME) --- */
 .lista-reviews {
   display: flex;
   flex-wrap: wrap;
@@ -85,7 +83,6 @@ nav ul li a:hover {
   align-items: stretch;
 }
 
-/* layout dos cards */
 .card-review {
   background-color: #222222; 
   border: 1px solid #333;
@@ -100,7 +97,6 @@ nav ul li a:hover {
   border-color: #B8860B;
 }
 
-/* configs das imagens na página home */
 .card-imagem img {
   width: 100%;
   height: 200px; 
@@ -129,15 +125,12 @@ nav ul li a:hover {
   color: #B8860B;
 }
 
-/* --- BLOCO CORRIGIDO E LIMPO --- */
 .card-conteudo p {
   color: #CCCCCC;
   font-size: 0.95rem;
   line-height: 1.6;
   margin-bottom: 20px;
   flex-grow: 1;
-  
-  /* Reset (sem duplicatas) */
   display: block; 
   overflow: visible; 
   height: auto; 
@@ -156,15 +149,18 @@ nav ul li a:hover {
   color: #FFFFFF;
 }
 
-/* estilo das páginas de navegaçãp */
-main > article > h1 {
+/* --- 5. ESTILO DAS PÁGINAS DE ARTIGO --- */
+/* [CORRIGIDO] Removido o seletor de filho direto '>' 
+   Agora 'main article h1' (com espaço) funciona. */
+
+main article h1 {
   font-size: 2.8rem;
   margin-top: 10px;
   margin-bottom: 25px;
   line-height: 1.2;
 }
 
-main > article > h2 {
+main article h2 {
   font-size: 2.0rem;
   border-left: 4px solid #B8860B; 
   padding-left: 15px;
@@ -172,36 +168,66 @@ main > article > h2 {
   margin-bottom: 20px;
 }
 
-main > article > p {
+main article p {
   font-size: 1.15rem;
   line-height: 1.8;
   margin-bottom: 25px;
 }
 
-main > article > p > strong {
+main article p > strong { /* '>' aqui está ok */
   color: #B8860B;
 }
 
-/* configs de imagem */
-main > article > .imagem-do-card {
-  width: 100%;
-  height: auto;
+/* [CORRIGIDO] Esta é a ÚNICA regra para imagens dentro de artigos */
+main article .imagem-do-card {
   display: block;
-  border-radius: 8px;
+  width: 100%;
+  max-width: 100%; /* Garante que não vaze */
+  height: auto;
   margin: 20px 0;
+  border-radius: 8px;
+  object-fit: unset;
 }
 
-/* rodapé */
-footer {
+/* --- 6. CITAÇÕES (BLOCKQUOTE) --- */
+/* [ADICIONADO] Estilo que estava faltando */
+.citacao-destaque {
+  background-color: #222;
+  border-left: 4px solid #B8860B;
+  color: #FFFFFF;
+  padding: 20px;
+  margin: 30px 10px;
+  font-style: italic;
+  font-weight: bold;
   text-align: center;
-  padding: 30px 0;
-  margin-top: 40px;
-  border-top: 1px solid #333;
-  font-size: 0.9rem;
-  color: #888;
+  font-size: 1.2rem;
+  line-height: 1.7;
 }
 
-/* página de contato */
+.citacao-destaque footer {
+  font-weight: normal;
+  font-size: 1rem;
+  color: #CCCCCC;
+  margin-top: 10px;
+  display: block;
+}
+
+/* --- 7. LEGENDAS DE IMAGEM (FIGURE) --- */
+/* [ADICIONADO] Estilo que estava faltando */
+main article figure {
+  margin: 0;
+  padding: 0;
+}
+
+main article figure figcaption {
+  color: #999;
+  font-size: 0.9rem;
+  font-style: italic;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* --- 8. PÁGINA DE CONTATO --- */
 .form-group {
   margin-bottom: 20px;
 }
@@ -246,4 +272,14 @@ footer {
 .btn-submit:hover {
   background-color: #FFFFFF;
   color: #181818;
+}
+
+/* --- 9. RODAPÉ --- */
+footer {
+  text-align: center;
+  padding: 30px 0;
+  margin-top: 40px;
+  border-top: 1px solid #333;
+  font-size: 0.9rem;
+  color: #888;
 }
