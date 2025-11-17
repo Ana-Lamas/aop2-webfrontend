@@ -3,57 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="authors" content="Ana Caroline Lamas">
-    <meta name="authors" content="Pablo de Souza">
+    
+    <meta name="authors" content="Ana Caroline Lamas, Pablo de Souza">
+    
     <title>Contatos - Animes em Foco</title>
     <link rel="stylesheet" href="style.css">
     </head>
 <body>
     <div class="container-principal">
-    <header>
-        <h1>Animes em Foco</h1>
-        
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="one-piece-tritoes.html">Opinião: One Piece</a></li>
-                <li><a href="frieren-mundo.html">Análise: Frieren</a></li>
-                <li><a href="fullmetal-quimica.html">Análise: Fullmetal</a></li>
-                <li><a href="contatos.html">Contatos</a></li>
-            </ul>
-        </nav>
-    </header>
+        <header>
+            <h1>Animes em Foco</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="one-piece-tritoes.html">Opinião: One Piece</a></li>
+                    <li><a href="frieren-mundo.html">Análise: Frieren</a></li>
+                    <li><a href="fullmetal-quimica.html">Análise: Fullmetal</a></li>
+                    <li><a href="contatos.html">Contatos</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <main>
-        <h2>Entre em Contato</h2>
-        <p>Gostou de uma análise? Discordou de tudo? Envie sua mensagem, sugestão de pauta ou crítica! Sua opinião também é bem-vinda.</p>
-        
-        <form action="#" method="post">
-            <div>
-                <label for="nome">Seu Nome:</label>
-                <input type="text" id="nome" name="nome_usuario" required>
-            </div>
-            <div>
-                <label for="email">Seu E-mail:</label>
-                <input type="email" id="email" name="email_usuario" required>
-            </div>
-            <div>
-                <label for="assunto">Assunto:</label>
-                <input type="text" id="assunto" name="assunto">
-            </div>
-            <div>
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem_usuario" rows="6" required></textarea>
-            </div>
-            <div>
-                <button type="submit">Enviar Mensagem</button>
-            </div>
-        </form>
-    </main>
+        <main>
+            <h2>Entre em Contato</h2>
+            <p>Gostou de uma análise? Discordou de tudo? Envie sua mensagem, sugestão de pauta ou crítica! Sua opinião também é bem-vinda.</p>
+            
+            <form action="#" method="post">
+                
+                <div class="form-group">
+                    <label for="nome">Seu Nome:</label>
+                    <input type="text" id="nome" name="nome_usuario" placeholder="Digite seu nome completo" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Seu E-mail:</label>
+                    <input type="email" id="email" name="email_usuario" placeholder="exemplo@email.com" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="assunto">Assunto:</label>
+                    <input type="text" id="assunto" name="assunto" placeholder="Sugestão de pauta, crítica, etc.">
+                </div>
+                
+                <div class="form-group">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem_usuario" rows="6" placeholder="Escreva sua mensagem aqui..." required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <button type="submit" class="btn-submit">Enviar Mensagem</button>
+                </div>
+            </form>
+        </main>
 
-    <footer>
-        <p>&copy; 2025 - Animes em Foco. Todos os direitos reservados.</p>
-    </footer>
+        <footer>
+            <p>&copy; 2025 - Animes em Foco. Todos os direitos reservados.</p>
+        </footer>
     </div>
 </body>
 </html>

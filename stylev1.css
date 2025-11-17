@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+
+/* tema global do site */
+body {
+  background-color: #181818;
+  color: #CCCCCC; 
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #FFFFFF;
+  font-family: 'Source Sans Pro', sans-serif; 
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+a {
+  color: #B8860B;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FFFFFF;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #333;
+  margin: 30px 0;
+}
+
+/* layout principal */
+.container-principal {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* cabeçalho e botões de navegação */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 2px solid #B8860B; 
+  margin-bottom: 30px; 
+}
+
+header h1 {
+  font-size: 2.2rem;
+  margin: 0;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 20px;
+}
+
+nav ul li a {
+  font-weight: bold;
+  color: #B8860B;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+/* configs dos cards */
+
+/* cards um ao lado do outro */
+.lista-reviews {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  padding: 0;
+  align-items: stretch;
+}
+
+/* layout dos cards */
+.card-review {
+  background-color: #222222; 
+  border: 1px solid #333;
+  width: 350px;
+  border-radius: 8px;
+  overflow: hidden; 
+  display: flex;
+  flex-direction: column;
+}
+
+.card-review:hover {
+  border-color: #B8860B;
+}
+
+/* configs das imagens na página home */
+.card-imagem img {
+  width: 100%;
+  height: 200px; 
+  object-fit: cover;
+  display: block;
+}
+
+.card-conteudo {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-conteudo h3 {
+  font-size: 1.4rem;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.card-conteudo h3 a {
+  color: #FFFFFF;
+}
+
+.card-conteudo h3 a:hover {
+  color: #B8860B;
+}
+
+/* --- BLOCO CORRIGIDO E LIMPO --- */
+.card-conteudo p {
+  color: #CCCCCC;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  flex-grow: 1;
+  
+  /* Reset (sem duplicatas) */
+  display: block; 
+  overflow: visible; 
+  height: auto; 
+  -webkit-line-clamp: unset;
+  -webkit-box-orient: unset;
+  text-overflow: unset;
+}
+
+.btn-leia-mais {
+  color: #B8860B;
+  font-weight: bold;
+  margin-top: auto;
+}
+
+.btn-leia-mais:hover {
+  color: #FFFFFF;
+}
+
+/* estilo das páginas de navegaçãp */
+main > article > h1 {
+  font-size: 2.8rem;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  line-height: 1.2;
+}
+
+main > article > h2 {
+  font-size: 2.0rem;
+  border-left: 4px solid #B8860B; 
+  padding-left: 15px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+main > article > p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+main > article > p > strong {
+  color: #B8860B;
+}
+
+/* configs de imagem */
+main > article > .imagem-do-card {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+/* rodapé */
+footer {
+  text-align: center;
+  padding: 30px 0;
+  margin-top: 40px;
+  border-top: 1px solid #333;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/* página de contato */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #222222;
+  color: #CCCCCC;
+  border: 1px solid #333;
+  outline: none;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group textarea:focus {
+  border-color: #B8860B;
+}
+
+.btn-submit {
+  background-color: #B8860B;
+  color: #181818;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background-color: #FFFFFF;
+  color: #181818;
+}
