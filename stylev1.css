@@ -280,3 +280,19 @@ footer {
   font-size: 0.9rem;
   color: #888;
 }
+
+/* mensagem de sucesso contato */
+
+.form-success-message {
+  background-color: #222;
+  border: 1px solid #B8860B;
+  color: #FFFFFF;
+  
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+  
+  display: none; 
+}
