@@ -1,6 +1,6 @@
 # Animes em Foco
 
-![Status do Projeto](https://img.shields.io/badge/Status-Concluído-brightgreen)
+![Status do Projeto](https://img.shields.io/badge/Status-Em%20Progresso-yellow)
 
 Blog estático de reviews e análises de animes, desenvolvido como projeto acadêmico para a disciplina de Programação Web - Front End da Universidade de Vila Velha, como uma atividade proposta na Atividade Online Pontuada 2.
 
