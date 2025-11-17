@@ -20,7 +20,7 @@ O site é composto por 5 páginas principais:
 
 ---
 
-## 🎨 Tema e Estilização
+## Tema e Estilização
 
 Todo o estilo do site é controlado por um único arquivo, **`stylev1.css`**.
 
